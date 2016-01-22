@@ -1,4 +1,4 @@
-vim-lisa v0.2 beta: LISA+ syntax highlighting
+vim-lisa: LISA+ syntax highlighting
 =============================================
 Syntax highlighting for Language for Instruction Set Architecture (LISA+). The
 plugin highlights most of the major keywords in LISA. Since LISA+ allows C/C++
