@@ -25,7 +25,7 @@ endif
 syn keyword lisaTodo         contained TODO FIXME XXX NOTE
 syn match   lisaComment      "//.*$" contains=lisaTodo
 syn region  lisaMultiComment start="/\*" end="\*/" contains=lisaTodo
-syn keyword lisaSecHeaders   resources composition connection includes properties debug behaviour behavior
+syn keyword lisaSecHeaders   resources composition connection includes properties debug behaviour behavior component
 syn keyword lisaType         addressable master slave port internal
 syn keyword lisaMacro        REGISTER MEMORY PARAMETER nextgroup=lisaRegBlock skipwhite skipnl
 syn keyword lisaFunction     init reset terminate
