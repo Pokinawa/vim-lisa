@@ -25,7 +25,7 @@ endif
 syn keyword lisaTodo         contained TODO FIXME XXX NOTE
 syn match   lisaComment      "//.*$" contains=lisaTodo
 syn region  lisaMultiComment start="/\*" end="\*/" contains=lisaTodo
-syn keyword lisaSecHeaders   resources composition connection includes properties debug behaviour behavior component
+syn keyword lisaSecHeaders   resources composition connection includes properties debug behaviour behavior component protocol
 syn keyword lisaType         addressable master slave port internal
 syn keyword lisaMacro        REGISTER MEMORY PARAMETER nextgroup=lisaRegBlock skipwhite skipnl
 syn keyword lisaFunction     init reset terminate
@@ -36,7 +36,7 @@ syn keyword lisaAttributes   contained address attribute bitwidth description di
                                       \reset_value type virtual visible_in_debugger write_behavior write_function write_mask
                                       \write_sec_mask default max min runtime allow_unaligned_access endianness executable mau_size
                                       \paged space_id supported_multiples_of_mau virtual
-syn region  lisaRegBlock    start="{" end="}" matchgroup=lisaMacro contains=lisaAttributes fold transparent contained
+syn region  lisaRegBlock    start="{" end="}" matchgroup=lisaMacro contains=lisaAttributes,cType,cString,cppBoolean,cNumbers fold transparent contained
 
 hi def link lisaTodo            Todo
 hi def link lisaComment         Comment
